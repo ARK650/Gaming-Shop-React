@@ -1,0 +1,22 @@
+[
+  {
+    "name": "High End PC",
+    "description": "Top-of-the-line PCs designed for maximum performance and gaming."
+  },
+  {
+    "name": "Medium End PC",
+    "description": "Balanced PCs offering good performance for gaming and productivity."
+  },
+  {
+    "name": "Low End PC",
+    "description": "Affordable PCs suitable for basic tasks and light gaming."
+  },
+  {
+    "name": "Gaming Laptop",
+    "description": "Portable laptops built for gaming on the go with high-end specs."
+  },
+  {
+    "name": "Handheld",
+    "description": "Compact gaming devices that are portable and easy to carry."
+  }
+]
