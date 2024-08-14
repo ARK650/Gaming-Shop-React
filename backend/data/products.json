@@ -4,174 +4,174 @@
     "price": 2500,
     "description": "A top-tier gaming PC with the latest RTX 4090 graphics card.",
     "category": "High End PC",
-    "imageUrl": "https://example.com/high-end-gaming-pc-1.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "High-End Gaming PC 2",
     "price": 2300,
     "description": "High-performance gaming PC with liquid cooling.",
     "category": "High End PC",
-    "imageUrl": "https://example.com/high-end-gaming-pc-2.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "High-End Gaming PC 3",
     "price": 2400,
     "description": "High-end PC featuring Intel i9 processor and 32GB RAM.",
     "category": "High End PC",
-    "imageUrl": "https://example.com/high-end-gaming-pc-3.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "High-End Gaming PC 4",
     "price": 2600,
     "description": "Gaming powerhouse with custom RGB lighting.",
     "category": "High End PC",
-    "imageUrl": "https://example.com/high-end-gaming-pc-4.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "High-End Gaming PC 5",
     "price": 2800,
     "description": "Ultimate gaming rig with dual GPU setup.",
     "category": "High End PC",
-    "imageUrl": "https://example.com/high-end-gaming-pc-5.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Medium-End Gaming PC 1",
     "price": 1500,
     "description": "Balanced gaming PC with RTX 3070 and 16GB RAM.",
     "category": "Medium End PC",
-    "imageUrl": "https://example.com/medium-end-gaming-pc-1.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Medium-End Gaming PC 2",
     "price": 1400,
     "description": "PC for gaming and productivity with AMD Ryzen 7.",
     "category": "Medium End PC",
-    "imageUrl": "https://example.com/medium-end-gaming-pc-2.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Medium-End Gaming PC 3",
     "price": 1600,
     "description": "All-around performer with NVIDIA GTX 1660 Ti.",
     "category": "Medium End PC",
-    "imageUrl": "https://example.com/medium-end-gaming-pc-3.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Medium-End Gaming PC 4",
     "price": 1700,
     "description": "Solid gaming PC with Intel i7 processor.",
     "category": "Medium End PC",
-    "imageUrl": "https://example.com/medium-end-gaming-pc-4.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Medium-End Gaming PC 5",
     "price": 1550,
     "description": "Great value PC with ample storage and cooling.",
     "category": "Medium End PC",
-    "imageUrl": "https://example.com/medium-end-gaming-pc-5.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Low-End Gaming PC 1",
     "price": 800,
     "description": "Budget-friendly gaming PC with GTX 1050 Ti.",
     "category": "Low End PC",
-    "imageUrl": "https://example.com/low-end-gaming-pc-1.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Low-End Gaming PC 2",
     "price": 900,
     "description": "Affordable PC for light gaming and daily tasks.",
     "category": "Low End PC",
-    "imageUrl": "https://example.com/low-end-gaming-pc-2.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Low-End Gaming PC 3",
     "price": 750,
     "description": "Basic gaming PC with AMD Radeon RX 570.",
     "category": "Low End PC",
-    "imageUrl": "https://example.com/low-end-gaming-pc-3.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Low-End Gaming PC 4",
     "price": 850,
     "description": "Entry-level PC with 8GB RAM and 1TB HDD.",
     "category": "Low End PC",
-    "imageUrl": "https://example.com/low-end-gaming-pc-4.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Low-End Gaming PC 5",
     "price": 950,
     "description": "Gaming on a budget with decent performance.",
     "category": "Low End PC",
-    "imageUrl": "https://example.com/low-end-gaming-pc-5.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Gaming Laptop 1",
     "price": 1800,
     "description": "High-performance gaming laptop with RTX 3080.",
     "category": "Gaming Laptop",
-    "imageUrl": "https://example.com/gaming-laptop-1.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Gaming Laptop 2",
     "price": 1700,
     "description": "Portable gaming with Intel i7 and 16GB RAM.",
     "category": "Gaming Laptop",
-    "imageUrl": "https://example.com/gaming-laptop-2.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Gaming Laptop 3",
     "price": 1600,
     "description": "Sleek design with powerful NVIDIA GTX 1660 Ti.",
     "category": "Gaming Laptop",
-    "imageUrl": "https://example.com/gaming-laptop-3.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Gaming Laptop 4",
     "price": 1500,
     "description": "Gaming on the go with AMD Ryzen 7.",
     "category": "Gaming Laptop",
-    "imageUrl": "https://example.com/gaming-laptop-4.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Gaming Laptop 5",
     "price": 1900,
     "description": "Top-tier gaming laptop with dual cooling.",
     "category": "Gaming Laptop",
-    "imageUrl": "https://example.com/gaming-laptop-5.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Handheld Gaming Device 1",
     "price": 400,
     "description": "Portable handheld gaming with Android OS.",
     "category": "Handheld",
-    "imageUrl": "https://example.com/handheld-gaming-device-1.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Handheld Gaming Device 2",
     "price": 350,
     "description": "Compact gaming device with pre-installed games.",
     "category": "Handheld",
-    "imageUrl": "https://example.com/handheld-gaming-device-2.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Handheld Gaming Device 3",
     "price": 300,
     "description": "Lightweight handheld with WiFi and Bluetooth.",
     "category": "Handheld",
-    "imageUrl": "https://example.com/handheld-gaming-device-3.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Handheld Gaming Device 4",
     "price": 450,
     "description": "Premium handheld with 4K display support.",
     "category": "Handheld",
-    "imageUrl": "https://example.com/handheld-gaming-device-4.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   },
   {
     "name": "Handheld Gaming Device 5",
     "price": 500,
     "description": "Next-gen handheld with high-end graphics.",
     "category": "Handheld",
-    "imageUrl": "https://example.com/handheld-gaming-device-5.jpg"
+    "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2022/08/clx-scarab1.jpg?p=1"
   }
 ]

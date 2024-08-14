@@ -1,28 +1,39 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const cors = require("cors");
-require("dotenv").config();
+const dotenv = require("dotenv");
+dotenv.config(); // Make sure this is here to load the .env file
+
+const categoryRoutes = require("./routes/categoryRoutes");
+const productRoutes = require("./routes/productRoutes");
 
 const app = express();
-const PORT = process.env.PORT || 5000;
-
-app.use(cors());
 app.use(express.json());
+
+// Routes
+app.use("/api", categoryRoutes);
+app.get("/api/products", async (req, res) => {
+  try {
+    const category = req.query.category;
+    const products = await Product.find(category ? { category } : {});
+    res.json(products);
+  } catch (err) {
+    res.status(500).json({ message: "Server Error" });
+  }
+});
+
+const PORT = process.env.PORT || 5000;
 
 mongoose
   .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.log("MongoDB connected"))
-  .catch((err) => console.log(err));
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
-
-const productRoutes = require("./routes/productRoutes");
-const categoryRoutes = require("./routes/categoryRoutes");
-
-app.use("/api/products", productRoutes);
-app.use("/api/categories", categoryRoutes);
+  .then(() => {
+    console.log("Connected to MongoDB");
+    app.listen(PORT, () => {
+      console.log(`Server is running on port ${PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.error("MongoDB connection failed:", err);
+  });

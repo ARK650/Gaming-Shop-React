@@ -1,14 +1,17 @@
+// backend/routes/productRoutes.js
+
 const express = require("express");
 const router = express.Router();
 const Product = require("../models/products");
 
-// Get all products
-router.get("/", async (req, res) => {
+// Get products by category
+router.get("/products/:category", async (req, res) => {
   try {
-    const products = await Product.find().populate("category");
+    const category = req.params.category.replace(/-/g, " "); // Convert URL-friendly names back to regular
+    const products = await Product.find({ category });
     res.json(products);
-  } catch (err) {
-    res.status(500).json({ message: err.message });
+  } catch (error) {
+    res.status(500).json({ message: "Server Error" });
   }
 });
 
