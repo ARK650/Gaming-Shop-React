@@ -1,7 +1,6 @@
 // src/components/ProductCard.jsx
 import "./ProductCard.css";
-
-export const ProductCard = ({ product }) => {
+const ProductCard = ({ product }) => {
   return (
     <div className="product-card">
       <img src={product.imageUrl} alt={product.name} />
@@ -11,3 +10,5 @@ export const ProductCard = ({ product }) => {
     </div>
   );
 };
+
+export default ProductCard;

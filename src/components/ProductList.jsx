@@ -1,7 +1,6 @@
 import ProductCard from "./ProductCard";
-import "./ProductList.css";
 
-export const ProductList = ({ product }) => {
+const ProductList = ({ products }) => {
   return (
     <div className="product-list">
       {products.map((product) => (
@@ -10,3 +9,5 @@ export const ProductList = ({ product }) => {
     </div>
   );
 };
+
+export default ProductList; // Ensure this is a default export

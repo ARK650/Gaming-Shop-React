@@ -1,8 +1,8 @@
 // src/components/Navbar.jsx
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import "./Navbar.css"; // You can add custom styles here
-
-export const Navbar = ({ categories }) => {
+const Navbar = ({ categories }) => {
   return (
     <nav className="navbar">
       <h1>Gaming Shop</h1>
@@ -16,3 +16,8 @@ export const Navbar = ({ categories }) => {
     </nav>
   );
 };
+Navbar.propTypes = {
+  categories: PropTypes.array.isRequired, // Again, can be more specific with arrayOf and object shape
+};
+
+export default Navbar;

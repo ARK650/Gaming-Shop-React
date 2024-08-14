@@ -1,6 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const fs = require("fs");
+const path = require("path");
 dotenv.config(); // Make sure this is here to load the .env file
 
 const categoryRoutes = require("./routes/categoryRoutes");
@@ -10,24 +12,13 @@ const app = express();
 app.use(express.json());
 
 // Routes
-app.use("/api", categoryRoutes);
-app.get("/api/products", async (req, res) => {
-  try {
-    const category = req.query.category;
-    const products = await Product.find(category ? { category } : {});
-    res.json(products);
-  } catch (err) {
-    res.status(500).json({ message: "Server Error" });
-  }
-});
+app.use("/api/categories", categoryRoutes);
+app.use("/api", productRoutes);
 
 const PORT = process.env.PORT || 5000;
 
 mongoose
-  .connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.MONGODB_URI)
   .then(() => {
     console.log("Connected to MongoDB");
     app.listen(PORT, () => {
