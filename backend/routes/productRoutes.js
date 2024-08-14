@@ -6,7 +6,7 @@ const Product = require("../models/products");
 router.get("/products", async (req, res) => {
   try {
     const category = req.query.category; // Use query parameter to filter products
-    const products = await Product.find(category ? { category } : {});
+    const products = req.query.product;
     res.json(products);
   } catch (error) {
     res.status(500).json({ message: "Server Error" });
