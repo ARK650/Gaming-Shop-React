@@ -1,15 +1,14 @@
 const express = require("express");
 const router = express.Router();
-const Product = require("../models/products");
+const Product = require("../models/Product");
 
-// Get products by category
-router.get("/products", async (req, res) => {
+// Get all products
+router.get("/", async (req, res) => {
   try {
-    const category = req.query.category; // Use query parameter to filter products
-    const products = await Product.find(category ? { category } : {});
+    const products = await Product.find().populate("category");
     res.json(products);
-  } catch (error) {
-    res.status(500).json({ message: "Server Error" });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
   }
 });
 

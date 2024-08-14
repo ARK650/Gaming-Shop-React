@@ -1,5 +1,5 @@
-// src/components/ProductCard.jsx
-import "./ProductCard.css";
+import "./ProductCard.css"; // Ensure you have a CSS file for styling
+
 const ProductCard = ({ product }) => {
   return (
     <div className="product-card">
