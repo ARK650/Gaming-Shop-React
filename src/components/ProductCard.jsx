@@ -1,4 +1,5 @@
-import "./ProductCard.css"; // Ensure you have a CSS file for styling
+import "./ProductCard.css";
+import PropTypes from "prop-types";
 
 const ProductCard = ({ product }) => {
   return (
@@ -9,6 +10,15 @@ const ProductCard = ({ product }) => {
       <p>Price: ${product.price}</p>
     </div>
   );
+};
+
+ProductCard.propTypes = {
+  product: PropTypes.shape({
+    imageUrl: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default ProductCard;

@@ -1,68 +1,40 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import ProductCard from "./ProductCard";
-import "./HomePage.css"; // Ensure you create this CSS file for styling
+import Navbar from "./Navbar"; // Make sure this path is correct
 
 const HomePage = () => {
-  const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState(null);
 
   useEffect(() => {
-    const fetchCategories = async () => {
-      try {
-        const response = await axios.get(
-          "http://localhost:5000/api/categories"
-        );
-        setCategories(response.data);
-      } catch (error) {
-        console.error("Error fetching categories:", error);
-      }
-    };
-
-    const fetchProducts = async () => {
-      try {
-        const response = await axios.get("http://localhost:5000/api/products");
+    axios
+      .get("http://localhost:5000/api/products")
+      .then((response) => {
         setProducts(response.data);
-      } catch (error) {
-        console.error("Error fetching products:", error);
-      }
-    };
-
-    fetchCategories();
-    fetchProducts();
+      })
+      .catch((error) => {
+        console.error("There was an error fetching the products!", error);
+      });
   }, []);
 
-  const handleCategoryClick = (category) => {
-    setSelectedCategory(category);
-  };
-
   return (
-    <div className="home-page">
-      <nav className="navbar">
-        <ul className="category-list">
-          {categories.map((category) => (
-            <li
-              key={category._id}
-              onClick={() => handleCategoryClick(category.name)}
-              className="category-item"
-            >
-              {category.name}
-            </li>
-          ))}
-        </ul>
-      </nav>
-      <div className="product-list">
-        {selectedCategory ? (
-          products
-            .filter((product) => product.category === selectedCategory)
+    <div>
+      <Navbar />
+      <h1>Welcome to the Gaming Shop</h1>
+      <div>
+        <h2>High-End PCs</h2>
+        <div className="product-grid">
+          {products
+            .filter((product) => product.category === "high end")
             .map((product) => (
-              <ProductCard key={product._id} product={product} />
-            ))
-        ) : (
-          <p>Select a category to view products.</p>
-        )}
+              <div key={product._id} className="product-card">
+                <img src={product.imageUrl} alt={product.name} />
+                <h3>{product.name}</h3>
+                <p>{product.price}</p>
+              </div>
+            ))}
+        </div>
       </div>
+      {/* Repeat the above block for other categories */}
     </div>
   );
 };
