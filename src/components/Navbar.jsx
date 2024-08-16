@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./Navbar.css";
-
 const Navbar = ({ categories }) => {
   return (
     <nav className="navbar">
       <h1>Gaming Shop</h1>
       <ul className="navbar-links">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
         {categories.length > 0 ? (
           categories.map((category) => (
             <li key={category._id}>

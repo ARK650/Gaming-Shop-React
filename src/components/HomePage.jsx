@@ -37,37 +37,23 @@ const HomePage = () => {
 
       <h1>Welcome to the Gaming Shop</h1>
 
-      <div>
-        <h2>High-End PCs</h2>
-        <div className="product-grid">
-          {products
-            .filter((product) => product.category === "high end")
-            .map((product) => (
-              <div key={product._id} className="product-card">
-                <img src={product.imageUrl} alt={product.name} />
-                <h3>{product.name}</h3>
-                <p>{product.price}</p>
+      {categories.map((category) => {
+        const product = products.find((prod) => prod.category === category._id);
+        return (
+          product && (
+            <div key={category._id}>
+              <h2>{category.name}</h2>
+              <div className="product-grid">
+                <div key={product._id} className="product-card">
+                  <img src={product.imageUrl} alt={product.name} />
+                  <h3>{product.name}</h3>
+                  <p>{product.price}</p>
+                </div>
               </div>
-            ))}
-        </div>
-      </div>
-
-      <div>
-        <h2>Mid-Range PCs</h2>
-        <div className="product-grid">
-          {products
-            .filter((product) => product.category === "mid range")
-            .map((product) => (
-              <div key={product._id} className="product-card">
-                <img src={product.imageUrl} alt={product.name} />
-                <h3>{product.name}</h3>
-                <p>{product.price}</p>
-              </div>
-            ))}
-        </div>
-      </div>
-
-      {/* Repeat similar sections for other categories (Budget, Professional, Gaming Laptops) */}
+            </div>
+          )
+        );
+      })}
     </div>
   );
 };
