@@ -1,8 +1,14 @@
+/* App.css */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: #f4f4f4;
+}
+
+h1,
+h2 {
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .container {
@@ -10,13 +16,6 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
-}
-
-h1,
-h2,
-h3 {
-  color: #333;
-  text-align: center;
 }
 
 .product-grid {
@@ -27,35 +26,39 @@ h3 {
 }
 
 .product-card {
-  border: 1px solid #ddd;
-  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   text-align: center;
-  width: calc(25% - 40px); /* Adjust width for 4 items per row */
-  box-sizing: border-box;
+  width: calc(25% - 20px);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
 }
 
 .product-card img {
   width: 100%;
-  height: auto;
-  max-height: 200px;
+  height: 200px;
   object-fit: cover;
+}
+
+.product-card h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.product-card p {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.product-card .price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ff6600;
   margin-bottom: 15px;
-}
-
-@media (max-width: 1024px) {
-  .product-card {
-    width: calc(33.33% - 40px); /* 3 items per row */
-  }
-}
-
-@media (max-width: 768px) {
-  .product-card {
-    width: calc(50% - 40px); /* 2 items per row */
-  }
-}
-
-@media (max-width: 480px) {
-  .product-card {
-    width: calc(100% - 40px); /* 1 item per row */
-  }
 }

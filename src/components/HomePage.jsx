@@ -1,9 +1,7 @@
-// src/components/HomePage.jsx
-
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Navbar from "./Navbar";
-
+import Navbar from "./NavBar";
+import "./HomePage.css";
 const HomePage = () => {
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -31,8 +29,8 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div>
-      {/* Pass the fetched categories to the Navbar */}
+    <div className="homepage-container">
+      {}
       <Navbar categories={categories} />
 
       <h1>Welcome to the Gaming Shop</h1>
