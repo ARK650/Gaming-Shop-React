@@ -1,4 +1,3 @@
-import "./ProductCard.css";
 import PropTypes from "prop-types";
 
 const ProductCard = ({ product }) => {
